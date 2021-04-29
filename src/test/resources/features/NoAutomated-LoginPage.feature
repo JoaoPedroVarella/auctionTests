@@ -27,7 +27,7 @@ Feature: Teste na tela de login
     When Digito a minha senha "123456"
     Then Verifico botao de login não está clicavel
 
-  Scenario: Entrada de usuário e saida do site
+  Scenario: Login e LogOut de usuário
     Given Que acesso o site
     When Faco login com "JoaoPedroVarella" e "123456"
     And Entro no site

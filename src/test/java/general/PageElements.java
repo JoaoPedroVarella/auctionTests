@@ -16,7 +16,7 @@ public class PageElements extends PageObject {
     public WebElement btnLogin;
 
     @FindBy(css = "div.alert.alert-danger")
-    public WebElement txtAlert;
+    public WebElement txtAlertLogin;
 
     @FindBy(css = "div.container div.d-flex.justify-content-center.h-100 div.card div.card-footer div.d-flex.justify-content-center.links > a:nth-child(1)")
     public WebElement btnSignUp;
@@ -95,7 +95,7 @@ public class PageElements extends PageObject {
         super(driver);
     }
 
-    //general Functions
+    //general functions
     public void login(String name, String password){
         inputUserName.sendKeys(name);
         inputPassword.sendKeys(password);
@@ -127,16 +127,17 @@ public class PageElements extends PageObject {
         inputBid.sendKeys(value);
     }
 
-    //click Function
+    //click function
     public void clickFunction(WebElement element){
         element.click();
     }
 
-    //getText Function
+    //getText function
     public String getTextFunction(WebElement element){
         return element.getText();
     }
 
+    //function get windows alert message
     public String alertMessage(){
         return driver.switchTo().alert().getText();
     }

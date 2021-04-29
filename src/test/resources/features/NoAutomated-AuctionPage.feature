@@ -7,22 +7,6 @@ Feature: Teste na tela de Leilao
     And Clico em sign up
     Then Verifico o leilao com "AuctionName", "UserName", "20" e se campo de usado esta setado com "No".
 
-  @sequencialTest
-  Scenario: Fazer um bid em um leilao aberto com valor valido
-    Given Que acesso o site
-    When Faco login com "JoaoPedroVarella" e "123456"
-    And Clico em um leilao nao finalizado com bid menor do que 150
-    And Digito um valor no campo bid "150" e clico em bid
-    Then Verifico se valor foi adicionado
-
-  @sequencialTest
-  Scenario: Fazer um bid em um leilao aberto com valor menor que ultimo bid
-    Given Que acesso o site
-    When Faco login com "JoaoPedroVarella" e "123456"
-    And Clico em um leilao nao finalizado com bid maior do que "150"
-    And Digito um valor no campo bid "140" e clico em bid
-    Then Verifico que valor nao foi adicionado
-
   Scenario: Criar um leilao com valor inicial negativo
     Given Que acesso o site
     When Faco login com "JoaoPedroVarella" e "123456"
@@ -67,5 +51,26 @@ Feature: Teste na tela de Leilao
     And Seleciono um leilao finalizado
     Then Verifico que leilao foi finalizado nao e possivel dar um lance
 
+  Scenario: Fazer um bid em um leilao com valor menor que ultimo bid
+    Given Que acesso o site
+    When Faco login com "JoaoPedroVarella" e "123456"
+    And Clico no campo Create Auction
+    And Digito um nome "Invalid Value" e valor inicial "100" para o leilao
+    And Clico em sign up
+    And Clico no leilao criado
+    And Digito um valor no campo bid "140" e clico em bid
+    And Digito um valor no campo bid "120" e clico em bid
+    Then Verifico que valor nao foi adicionado
 
-
+  Scenario: Finalizar um leilao com bids
+    Given Que acesso o site
+    When Faco login com "JoaoPedroVarella" e "123456"
+    And Clico no campo Create Auction
+    And Digito um nome "Delete Auction" e valor inicial "150" para o leilao
+    And Clico em sign up
+    And Clico no leilao criado
+    And Digito um valor no campo bid "160" e clico em bid
+    And Digito um valor no campo bid "170" e clico em bid
+    And Digito um valor no campo bid "180" e clico em bid
+    And Clico em end auction
+    Then Verifico que valores foram incluidos com sucesso e leilao finalizado

@@ -14,7 +14,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -27,6 +26,7 @@ public class Leilao {
     WebDriver driver;
     PageElements pageElements;
 
+    //screenshot function
     public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
         TakesScreenshot scrShot =((TakesScreenshot)webdriver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -45,7 +45,7 @@ public class Leilao {
 
     @After
     public void tearDown(){
-       //driver.quit();
+       driver.quit();
     }
 
     @Given("^Que acesso o site$")
@@ -70,7 +70,7 @@ public class Leilao {
     }
 
     @And("^Clico para dizer que o produto usado$")
-    public void clicoParaDizerQueOProdutoUsado() throws Exception {
+    public void clicoParaDizerQueOProdutoUsado() {
         pageElements.clickFunction(pageElements.btnUsed);
     }
 
@@ -81,7 +81,7 @@ public class Leilao {
     }
 
     @And("^Clico em end auction$")
-    public void clicoEmEndAuction() throws InterruptedException {
+    public void clicoEmEndAuction() {
         pageElements.clickFunction(pageElements.btnEndAuction);
     }
 
@@ -138,13 +138,15 @@ public class Leilao {
     @Then("^Verifico mensagem de erro sobre bid invalido$")
     public void verificoMensagemDeErroSobreBidInvalido() throws AWTException, IOException {
         assertEquals("It's not possible to bid this value.", pageElements.alertMessage());
+        //screenshot windows alert message
         BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
         ImageIO.write(image, "png", new File("target/screenshots/alertMessage.png"));
     }
 
-        @Then("^Verifico inclusao valor correto \"([^\"]*)\"$")
+    @Then("^Verifico inclusao valor correto \"([^\"]*)\"$")
     public void verificoInclusaoValorCorreto(String value) throws Exception {
         Thread.sleep(1000);
+        //scroll down
         JavascriptExecutor jse = ((JavascriptExecutor) driver);
         jse.executeScript("window.scrollBy(0,250)");
         takeSnapShot(driver, "target/screenshots/validValue.png");

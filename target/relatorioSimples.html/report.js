@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3271354300,
+  "duration": 3454133300,
   "status": "passed"
 });
 formatter.scenario({
@@ -57,7 +57,7 @@ formatter.match({
   "location": "Leilao.queAcessoOSite()"
 });
 formatter.result({
-  "duration": 1761403800,
+  "duration": 1712728800,
   "status": "passed"
 });
 formatter.match({
@@ -74,14 +74,14 @@ formatter.match({
   "location": "Leilao.facoLoginComE(String,String)"
 });
 formatter.result({
-  "duration": 2296463800,
+  "duration": 2376822000,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoCampoCreateAuction()"
 });
 formatter.result({
-  "duration": 210965000,
+  "duration": 291367300,
   "status": "passed"
 });
 formatter.match({
@@ -98,21 +98,21 @@ formatter.match({
   "location": "Leilao.digitoUmNomeEValorInicialParaOLeilao(String,String)"
 });
 formatter.result({
-  "duration": 221413500,
+  "duration": 377781900,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoParaDizerQueOProdutoUsado()"
 });
 formatter.result({
-  "duration": 63437800,
+  "duration": 91421300,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoEmSignUp()"
 });
 formatter.result({
-  "duration": 85802500,
+  "duration": 89885000,
   "status": "passed"
 });
 formatter.match({
@@ -137,15 +137,15 @@ formatter.match({
   "location": "Leilao.verificoOLeilaoComESeCampoDeUsadoEstaSetado(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1010108100,
+  "duration": 1103579500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 769355400,
+  "duration": 130900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1785904100,
+  "duration": 1819233600,
   "status": "passed"
 });
 formatter.scenario({
@@ -175,7 +175,7 @@ formatter.match({
   "location": "Leilao.queAcessoOSite()"
 });
 formatter.result({
-  "duration": 1491690600,
+  "duration": 1604234100,
   "status": "passed"
 });
 formatter.match({
@@ -192,22 +192,22 @@ formatter.match({
   "location": "Leilao.facoLoginComE(String,String)"
 });
 formatter.result({
-  "duration": 2436653700,
+  "duration": 2347126400,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.verificoAAusenciaDoBotaoCreateAuction()"
 });
 formatter.result({
-  "duration": 234452800,
+  "duration": 328698600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1253024600,
+  "duration": 27300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1973096700,
+  "duration": 2759529400,
   "status": "passed"
 });
 formatter.scenario({
@@ -262,7 +262,7 @@ formatter.match({
   "location": "Leilao.queAcessoOSite()"
 });
 formatter.result({
-  "duration": 1597087800,
+  "duration": 1454597300,
   "status": "passed"
 });
 formatter.match({
@@ -279,14 +279,14 @@ formatter.match({
   "location": "Leilao.facoLoginComE(String,String)"
 });
 formatter.result({
-  "duration": 2369109300,
+  "duration": 2391486600,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoCampoCreateAuction()"
 });
 formatter.result({
-  "duration": 263327400,
+  "duration": 268142300,
   "status": "passed"
 });
 formatter.match({
@@ -303,43 +303,43 @@ formatter.match({
   "location": "Leilao.digitoUmNomeEValorInicialParaOLeilao(String,String)"
 });
 formatter.result({
-  "duration": 264595500,
+  "duration": 246239300,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoEmSignUp()"
 });
 formatter.result({
-  "duration": 64440000,
+  "duration": 60699200,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoLeilaoCriado()"
 });
 formatter.result({
-  "duration": 574825500,
+  "duration": 560561300,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoEmEndAuction()"
 });
 formatter.result({
-  "duration": 63401100,
+  "duration": 69689100,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.verificoQueLeilaoFoiFinalizado()"
 });
 formatter.result({
-  "duration": 2133881200,
+  "duration": 2134312500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1166292200,
+  "duration": 24400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1842101900,
+  "duration": 1811299300,
   "status": "passed"
 });
 formatter.scenario({
@@ -394,7 +394,7 @@ formatter.match({
   "location": "Leilao.queAcessoOSite()"
 });
 formatter.result({
-  "duration": 1478251500,
+  "duration": 1577542300,
   "status": "passed"
 });
 formatter.match({
@@ -411,14 +411,14 @@ formatter.match({
   "location": "Leilao.facoLoginComE(String,String)"
 });
 formatter.result({
-  "duration": 2277889400,
+  "duration": 2325068500,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoCampoCreateAuction()"
 });
 formatter.result({
-  "duration": 211291900,
+  "duration": 240614600,
   "status": "passed"
 });
 formatter.match({
@@ -435,21 +435,21 @@ formatter.match({
   "location": "Leilao.digitoUmNomeEValorInicialParaOLeilao(String,String)"
 });
 formatter.result({
-  "duration": 228014700,
+  "duration": 247207200,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoEmSignUp()"
 });
 formatter.result({
-  "duration": 55933700,
+  "duration": 58544800,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoLeilaoCriado()"
 });
 formatter.result({
-  "duration": 546901300,
+  "duration": 511158200,
   "status": "passed"
 });
 formatter.match({
@@ -462,22 +462,22 @@ formatter.match({
   "location": "Leilao.digitoUmValorNoCampoBidEClicoEmBid(String)"
 });
 formatter.result({
-  "duration": 234732100,
+  "duration": 238131500,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.verificoMensagemDeErroSobreBidInvalido()"
 });
 formatter.result({
-  "duration": 606011700,
+  "duration": 550147900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 789922800,
+  "duration": 30700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1968679700,
+  "duration": 1724522000,
   "status": "passed"
 });
 formatter.scenario({
@@ -532,7 +532,7 @@ formatter.match({
   "location": "Leilao.queAcessoOSite()"
 });
 formatter.result({
-  "duration": 1360630100,
+  "duration": 1663872100,
   "status": "passed"
 });
 formatter.match({
@@ -549,14 +549,14 @@ formatter.match({
   "location": "Leilao.facoLoginComE(String,String)"
 });
 formatter.result({
-  "duration": 2278974300,
+  "duration": 2341926600,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoCampoCreateAuction()"
 });
 formatter.result({
-  "duration": 238628500,
+  "duration": 238125100,
   "status": "passed"
 });
 formatter.match({
@@ -573,21 +573,21 @@ formatter.match({
   "location": "Leilao.digitoUmNomeEValorInicialParaOLeilao(String,String)"
 });
 formatter.result({
-  "duration": 239241800,
+  "duration": 275189200,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoEmSignUp()"
 });
 formatter.result({
-  "duration": 75161000,
+  "duration": 65706600,
   "status": "passed"
 });
 formatter.match({
   "location": "Leilao.clicoNoLeilaoCriado()"
 });
 formatter.result({
-  "duration": 555762700,
+  "duration": 512599600,
   "status": "passed"
 });
 formatter.match({
@@ -600,7 +600,7 @@ formatter.match({
   "location": "Leilao.digitoUmValorNoCampoBidEClicoEmBid(String)"
 });
 formatter.result({
-  "duration": 233671200,
+  "duration": 238878200,
   "status": "passed"
 });
 formatter.match({
@@ -613,12 +613,12 @@ formatter.match({
   "location": "Leilao.verificoInclusaoValorCorreto(String)"
 });
 formatter.result({
-  "duration": 1151715000,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c16[0]\u003e but was:\u003c16[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat steps.Leilao.verificoInclusaoValorCorreto(Leilao.java:148)\r\n\tat ✽.Then Verifico inclusao valor correto \"160\"(src/test/resources/features/Automated.feature:44)\r\n",
+  "duration": 1176587700,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c16[0]\u003e but was:\u003c16[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat steps.Leilao.verificoInclusaoValorCorreto(Leilao.java:151)\r\n\tat ✽.Then Verifico inclusao valor correto \"160\"(src/test/resources/features/Automated.feature:44)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 771251600,
+  "duration": 23100,
   "status": "passed"
 });
 });
