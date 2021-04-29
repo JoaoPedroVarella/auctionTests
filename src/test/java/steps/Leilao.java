@@ -9,6 +9,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import general.PageElements;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -44,7 +45,7 @@ public class Leilao {
 
     @After
     public void tearDown(){
-       driver.quit();
+       //driver.quit();
     }
 
     @Given("^Que acesso o site$")
@@ -103,6 +104,8 @@ public class Leilao {
         assertEquals(value, pageElements.getTextFunction(pageElements.gridLastElementValue));
         assertEquals(used, pageElements.getTextFunction(pageElements.gridLastElementUsedProduct));
         pageElements.clickFunction(pageElements.gridLastElementName);
+        JavascriptExecutor jse = ((JavascriptExecutor) driver);
+        jse.executeScript("window.scrollBy(0,-250)");
         takeSnapShot(driver, "target/screenshots/createdAuction.png");
     }
 
@@ -134,16 +137,16 @@ public class Leilao {
 
     @Then("^Verifico mensagem de erro sobre bid invalido$")
     public void verificoMensagemDeErroSobreBidInvalido() throws AWTException, IOException {
-        System.out.println(pageElements.alertMessage());
         assertEquals("It's not possible to bid this value.", pageElements.alertMessage());
         BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
         ImageIO.write(image, "png", new File("target/screenshots/alertMessage.png"));
-        pageElements.alertMessage();
     }
 
         @Then("^Verifico inclusao valor correto \"([^\"]*)\"$")
     public void verificoInclusaoValorCorreto(String value) throws Exception {
         Thread.sleep(1000);
+        JavascriptExecutor jse = ((JavascriptExecutor) driver);
+        jse.executeScript("window.scrollBy(0,250)");
         takeSnapShot(driver, "target/screenshots/validValue.png");
         assertEquals(value,pageElements.getTextFunction(pageElements.gridLastBid));
 

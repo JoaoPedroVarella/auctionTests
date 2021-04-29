@@ -61,5 +61,11 @@ Feature: Teste na tela de Leilao
     And Digito um valor no campo bid "90" e clico em bid
     Then Verifico que valor foi incluso com sucesso
 
+  Scenario: Fazer um lance em um leilao finalizado
+    Given Que acesso o site
+    When Faco login com "JoaoPedroVarella" e "123456"
+    And Seleciono um leilao finalizado
+    Then Verifico que leilao foi finalizado nao e possivel dar um lance
+
 
 

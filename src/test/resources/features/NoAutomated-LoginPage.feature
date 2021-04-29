@@ -29,7 +29,7 @@ Feature: Teste na tela de login
 
   Scenario: Entrada de usuário e saida do site
     Given Que acesso o site
-    When Faco login com "<nome>" e "<senha>"
+    When Faco login com "JoaoPedroVarella" e "123456"
     And Entro no site
     And Clico em Sign Out
     Then Verifico se voltei a tela de login
