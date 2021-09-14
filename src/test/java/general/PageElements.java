@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class PageElements extends PageObject {
 
-    //login elements
     @FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]")
     public WebElement inputUserName;
 
@@ -21,7 +20,6 @@ public class PageElements extends PageObject {
     @FindBy(css = "div.container div.d-flex.justify-content-center.h-100 div.card div.card-footer div.d-flex.justify-content-center.links > a:nth-child(1)")
     public WebElement btnSignUp;
 
-    //register elements
     @FindBy(css = "#name")
     public WebElement inputNameRegister;
 
@@ -43,7 +41,6 @@ public class PageElements extends PageObject {
     @FindBy(css = "div.container div.d-flex.justify-content-center.h-100 div.card div.card-body form.ng-untouched.ng-pristine.ng-invalid div.form-group:nth-child(7) > button.btn.float-right.login_btn")
     public WebElement btnSignUpRegister;
 
-    //auction elements
     @FindBy(css = "nav.navbar.navbar-expand-lg.navbar-light.bg-light div.navbar-collapse.collapse.show ul.navbar-nav.mr-auto li.nav-item:nth-child(2) > a.nav-link")
     public WebElement btnAuctions;
 
@@ -74,7 +71,6 @@ public class PageElements extends PageObject {
     @FindBy (xpath = "//button[contains(text(),'Bid')]")
     public WebElement btnBid;
 
-    //grid elements
     @FindBy (xpath = "//tbody/tr[last()]/td[1]/a[1]")
     public WebElement gridLastElementName;
 
@@ -95,7 +91,6 @@ public class PageElements extends PageObject {
         super(driver);
     }
 
-    //general functions
     public void login(String name, String password){
         inputUserName.sendKeys(name);
         inputPassword.sendKeys(password);
@@ -127,17 +122,14 @@ public class PageElements extends PageObject {
         inputBid.sendKeys(value);
     }
 
-    //click function
     public void clickFunction(WebElement element){
         element.click();
     }
 
-    //getText function
     public String getTextFunction(WebElement element){
         return element.getText();
     }
 
-    //function get windows alert message
     public String alertMessage(){
         return driver.switchTo().alert().getText();
     }

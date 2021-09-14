@@ -26,7 +26,6 @@ public class Leilao {
     WebDriver driver;
     PageElements pageElements;
 
-    //screenshot function
     public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
         TakesScreenshot scrShot =((TakesScreenshot)webdriver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
